@@ -8,7 +8,6 @@ def chat_with_bot(user_text: str) -> str:
             {"role": "system", "content": "You are a helpful assistant."}
         ]
 
-    # Append user's message
     chat_with_bot.chat_history.append({"role": "user", "content": user_text})
 
     try:
@@ -31,3 +30,4 @@ def chat_with_bot(user_text: str) -> str:
 #         break
 #     bot_response = chat_with_bot(user_input)
 #     print("Bot:", bot_response)
+
